@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "outer">
+        <div class = "inner"></div>
+        <div class = "inner"></div>
+        <div class = "inner"></div>
+        <div class = "inner"></div>
+      </div>
+      <style>
+        *{
+          margin: 0;
+        }
+        body{
+          background: #FBC3E4;
+        }
+        .outer{
+          position: absolute;
+          width: 200;
+          height: 200;
+          left: 100;
+          top: 50;
+          overflow: hidden;
+        }
+        .inner{
+          width: 80;
+          height: 80;
+          background: #FBC3E4;
+          position: absolute;
+          border: solid #8C0052 40px;
+        }
+        :nth-child(1 of .inner){
+          left: 0;
+          top: 0;
+          border-left: 0;
+          border-top: 0;
+          border-radius: 0 0 100% 0;
+        }
+      </style>
+</body>
+</html>
